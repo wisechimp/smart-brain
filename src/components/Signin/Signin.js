@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./signin.css"
+
 class Signin extends React.Component {
   constructor(props) {
     super(props)
@@ -48,7 +50,7 @@ class Signin extends React.Component {
                   Email
                 </label>
                 <input
-                  className='pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100'
+                  className='pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100 hover-black'
                   type='email'
                   name='email-address'
                   id='email-address'
@@ -60,7 +62,7 @@ class Signin extends React.Component {
                   Password
                 </label>
                 <input
-                  className='b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100'
+                  className='b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100 hover-black'
                   type='password'
                   name='password'
                   id='password'
@@ -71,7 +73,7 @@ class Signin extends React.Component {
             <div className=''>
               <input
                 onClick={this.onSubmitSignIn}
-                className='b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib'
+                className='b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib hover-black'
                 type='submit'
                 value='Sign in'
               />
