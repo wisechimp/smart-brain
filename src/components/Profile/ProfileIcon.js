@@ -31,7 +31,9 @@ const ProfileIcon = (props) => {
             backgroundColor: "rgba(255, 255, 255 0.5",
           }}
         >
-          <DropdownItem>View Profile</DropdownItem>
+          <DropdownItem onClick={props.toggleProfileModal}>
+            View Profile
+          </DropdownItem>
           <DropdownItem onClick={() => props.onRouteChange("signout")}>
             Sign Out
           </DropdownItem>
